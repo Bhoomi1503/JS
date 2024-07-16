@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Concept</title>
+</head>
+<body>
+    <script>
+        //Array Create and Initialize
+        let arr=[10,12,32,42,21];
+        console.log(arr);
+        //add elements
+        let arr1=[10,12,32,42,21];
+        arr1.push(20);
+        console.log(arr1);
+        //unshift element
+        let arr2=[10,12,32,42,21];
+        arr2.unshift(17);
+        console.log(arr2);
+        //remove element
+        let arr3=[10,12,32,42,21];
+        arr3.pop();//last element pop out
+        console.log(arr3);
+        //shift element
+        let arr4=[10,12,32,42,21];
+        arr4.shift();//first element pop out
+        console.log(arr4);
+        //Searching
+        let arr5=[10,12,32,42,21];
+        console.log(arr5.indexOf(32));
+        //includes-boolean output
+        let arr6=[10,12,32,42,21];
+        console.log(arr6.includes(32));
+        //join
+        let arr7=[5,6,7,8,9];
+        let arr8=[0];
+        console.log(arr7.join(arr8));
+        //find
+        let arr9=[10,12,32,42,21];
+        console.log(arr9.find(num=>num>30));
+        //map
+        let arr10=[10,12,32,42,21];
+        let newar=arr10.map(x=>x+4);
+        console.log(newar);
+        //sort
+        let arr11=[12,32,42,21,10];
+        arr11.sort();
+        console.log(arr11);
+        //reverse
+        let arr12=[12,32,42,21,10];
+        arr12.reverse();
+        console.log(arr12);
+        //max
+        let arr13=[12,32,42,21,10];
+        let maxi=Math.max(...arr13);
+        console.log(maxi);
+        //min
+        let arr14=[12,32,42,21,10];
+        let mini=Math.min(...arr14);
+        console.log(mini);
+        
+    </script>
+</body>
+</html>
